@@ -6,13 +6,13 @@
 class dateType
 {
 public:
-	void setDOB(int, int, int);
-	void setAdmit(int, int, int);
-	void setDisch(int, int, int);
+	void setDate(int m, int d, int y);
 	
 	int getMonth() const;
 	int getDay() const;
 	int getYear() const;
+
+	void printDate() const; 
 
 	dateType(int = 1, int = 1, int = 1900);
 
