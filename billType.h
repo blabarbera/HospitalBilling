@@ -1,3 +1,9 @@
+#pragma once
+
+#ifndef billType_H
+#define billType_H
+
+using namespace std;
 
 class billType
 {
@@ -7,13 +13,20 @@ public:
 	void setDocChrg(float d);
 	void setRoomChrg(float r);
 	void setID(int id);
+
+	float getHospChrg();
+	float getPharmChrg();
+	float getDocChrg();
+
 	billType();
 	billType(int, float, float, float, float);
 
 private:
-	int PatID;
+	int patID;
 	float hospChrg;
 	float pharmChrg;
 	float docChrg;
 	float roomChrg;
 };
+
+#endif // !billType_H

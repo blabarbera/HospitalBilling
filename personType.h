@@ -1,4 +1,8 @@
 #pragma once
+
+#ifndef personType_H
+#define personType_H
+
 #include <iostream>
 #include <string>
 
@@ -34,3 +38,5 @@ private:
 	string firstName;		//variable to store the first name
 	string lastName;		//variable to store the last name
 };
+
+#endif // !personType_H

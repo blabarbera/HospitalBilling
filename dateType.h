@@ -3,6 +3,8 @@
 #ifndef dateType_H
 #define dateType_H
 
+using namespace std;
+
 class dateType
 {
 public:

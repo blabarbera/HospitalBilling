@@ -1,4 +1,10 @@
 #pragma once
+
+#ifndef patientType_H
+#define patientType_H
+
+using namespace std;
+
 #include "personType.h"
 #include "dateType.h"
 #include "doctorType.h"
@@ -9,6 +15,7 @@ class patientType: public personType
 {
 public:
 	patientType(string fname, string lname, int patID, int age, dateType DOB, dateType AdmitDate, dateType DischDate, doctorType PhysName);
+	patientType();
 
 	void setPatID(int ID);
 	void setAge(int a);
@@ -35,3 +42,4 @@ private:
 	doctorType PhysName;
 };
 
+#endif // !patientType_H
