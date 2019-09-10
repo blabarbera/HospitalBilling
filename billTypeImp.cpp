@@ -1,8 +1,10 @@
 #include "billType.h"
+
+using namespace std;
  
 void billType::setID(int id)
 {
-	PatID = id;
+	patID = id;
 }
 
 void billType::setHospChrg(float h)
@@ -41,4 +43,19 @@ billType::billType(int id, float h, float p, float d, float r)
 	setPharmChrg(p);
 	setDocChrg(d);
 	setRoomChrg(r);
+}
+
+float billType::getHospChrg()
+{
+	return hospChrg;
+}
+
+float billType::getPharmChrg()
+{
+	return pharmChrg;	
+}
+
+float billType::getDocChrg()
+{
+	return docChrg;
 }

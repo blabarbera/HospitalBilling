@@ -1,5 +1,7 @@
 #include "personType.h"
 
+using namespace std;
+
 void personType::print() const
 {
 	cout << firstName << " " << lastName;
